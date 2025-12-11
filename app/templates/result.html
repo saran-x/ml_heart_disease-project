@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    
+    <link rel="stylesheet" href="{{url_for('static',filename ='files/css/bootstrap.min.css')}}"> 
+</head>
+
+<body class="bg-light">
+<div class="container mt-5">
+    <div class="card shadow p-4">
+        <h3 class="text-center">Heart Disease Prediction Result</h3>
+
+        <h2 class="text-center text-primary mt-4">{{ results }}</h2>
+
+        <div class="text-center mt-4">
+            <a href="/" class="btn btn-success">Predict Again</a>
+        </div>
+    </div>
+</div>
+</body>
+<script src="{{url_for('static',filename ='files/js/bootstrap.min.js')}}"></script>
+<script src="{{url_for('static',filename ='files/js/jquery.js')}}"></script>
+</html>
